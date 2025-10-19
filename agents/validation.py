@@ -37,7 +37,13 @@ class SupportingDocumentationAgent:
             "nature.com", "sciencemag.org", "pnas.org",
             "harvard.edu", "mit.edu", "stanford.edu", "ox.ac.uk",
             "who.int", "cdc.gov", "nih.gov", "fda.gov",
-            "whitehouse.gov", "congress.gov"
+            "whitehouse.gov", "congress.gov", "nvidia.com", 
+            "amd.com", "intel.com", "microsoft.com", "apple.com",
+            "arxiv.org", "scholar.google.com", "zenodo.org", 
+            "academia.edu", "osf.io", "semanticscholar.org", "core.ac.uk",
+            "openaire.eu", "plos.org", "ling.auf.net", "eartharxiv.org",
+            "econpapers.repec.org", "chemrxiv.org", "socopen.org", "medrxiv.org", 
+            "biorxiv.org"
         }
 
     async def validate_content(
