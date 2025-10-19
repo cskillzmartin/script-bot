@@ -1,0 +1,58 @@
+[tool.poetry]
+name = "content-generation-pipeline"
+version = "0.1.0"
+description = "Autonomous multi-agent content generation pipeline for YouTube scripts"
+authors = ["Aaron Martin"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+langchain = "^0.1.0"
+langchain-community = "^0.0.10"
+langgraph = "^0.0.32"
+ollama = "^0.1.7"
+qdrant-client = "^1.7.0"
+pymongo = "^4.6.0"
+ddgs = "^6.2.0"
+trafilatura = "^1.7.0"
+httpx = "^0.26.0"
+pydantic = "^2.5.0"
+pydantic-settings = "^2.1.0"
+fastapi = "^0.108.0"
+uvicorn = "^0.25.0"
+streamlit = "^1.29.0"
+python-dotenv = "^1.0.0"
+asyncio = "^3.4.3"
+aiofiles = "^23.2.1"
+structlog = "^23.2.0"
+sentence-transformers = "^2.2.2"
+numpy = "^1.26.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+pytest-asyncio = "^0.21.0"
+pytest-cov = "^4.1.0"
+black = "^23.0.0"
+isort = "^5.12.0"
+mypy = "^1.7.0"
+pre-commit = "^3.5.0"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.0"
+pytest-asyncio = "^0.21.0"
+pytest-mock = "^3.11.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+content-pipeline = "cli:main"
+
+[tool.black]
+line-length = 100
+target-version = ['py311']
+
+[tool.isort]
+profile = "black"
+line_length = 100
